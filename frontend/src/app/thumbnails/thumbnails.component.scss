@@ -1,0 +1,41 @@
+.thumbnails-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .thumbnail-image {
+    margin-right: 20px;
+  }
+  
+  .thumbnail-image img {
+    width: 280px; /* Set the same width as in the template */
+    height: 180px; /* Set the same height as in the template */
+    border-radius: 8px;
+  }
+  
+  .thumbnail-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .thumbnail h2 {
+    font-size: 18px;
+  }
+  
+  .thumbnail p {
+    font-size: 14px;
+    color: #555;
+  }
+  

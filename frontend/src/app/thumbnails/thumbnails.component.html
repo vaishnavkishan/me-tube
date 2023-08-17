@@ -1,0 +1,15 @@
+<div class="thumbnails-container">
+    <div *ngFor="let data of thumbnailData" class="thumbnail">
+      <a [routerLink]="['/play', data.videoId]"> <!-- Link to video player component -->
+        <div class="thumbnail-image">
+          <img [src]="data.thumbnailUrl" alt="Thumbnail">
+        </div>
+      </a>
+      <div class="thumbnail-details">
+        <h2>{{ data.title }}</h2>
+        <p>{{ data.channel }}</p>
+        <p>{{ data.description }}</p>
+      </div>
+    </div>
+  </div>
+  

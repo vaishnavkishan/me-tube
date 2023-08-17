@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="top-bar">
+    <div class="top-bar-content">
+      <div class="logo">
+        <span>MyTube</span>
+      </div>
+      <div class="search-box">
+        <mat-form-field class="search-field">
+          <input matInput placeholder="Search">
+        </mat-form-field>
+        <button mat-icon-button>
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+      <div class="user-profile">
+        <button mat-icon-button>
+          <mat-icon>account_circle</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-toolbar>
+  
+  <mat-sidenav-container class="layout-container">
+    <mat-sidenav mode="side" opened>
+      <app-side-navigation></app-side-navigation>
+    </mat-sidenav>
+  
+    <div class="content">
+      <!-- Main Content -->
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-container>
+  
+  
+  <!-- <mat-toolbar color="primary" class="footer">
+  </mat-toolbar> -->
+  
